@@ -47,8 +47,8 @@ class SplashScreenWidget extends StatelessWidget {
               ),
             ),
             SizedBox(height: 50.0),
-            Text("MUNAIM NAEEM",style:TextStyle(fontSize: 35,color: Colors.black),),
-            Text("SP17-BCS-042",style:TextStyle(fontSize: 35,color: Colors.black),),
+            Text("ASIF RAMZAN",style:TextStyle(fontSize: 35,color: Colors.black),),
+            Text("SP17-BCS-060",style:TextStyle(fontSize: 35,color: Colors.black),),
             Center(
               child: Container(
                 width: 200,
