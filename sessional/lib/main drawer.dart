@@ -28,11 +28,11 @@ class MainDrawer extends StatelessWidget {
                     ),
                   ),
                   Text(
-                    'MUNAIM NAEEM', style: TextStyle(fontSize: 22, color: Colors.white,
+                    'ASIF RAMZAN', style: TextStyle(fontSize: 22, color: Colors.white,
                   ),
                   ),
                   Text(
-                    'Munaimnaeem@gmail.com', style: TextStyle(fontSize: 20, color: Colors.white,
+                    'asiframzan060@gmail.com', style: TextStyle(fontSize: 20, color: Colors.white,
                   ),
                   ),
                 ],
