@@ -1,8 +1,9 @@
+import 'package:flare_tutorial/main_drawer.dart';
 import 'package:flare_tutorial/splashscreen.dart';
 import 'package:flutter/material.dart';
 import 'Simple.dart';
 import 'hard.dart';
-
+import './main_drawer.dart';
 void main() => runApp(SplashScreenPage());
 
 class MyApp extends StatelessWidget {
@@ -13,7 +14,7 @@ class MyApp extends StatelessWidget {
       title: 'SECOND SESSIONAL',
       theme: ThemeData(
 
-        primarySwatch: Colors.red,
+        primarySwatch: Colors.green,
       ),
       home: MyHomePage(title: 'SECOND SESSIONAL'),
     );
@@ -53,6 +54,10 @@ class _MyHomePageState extends State<MyHomePage> {
     // than having to individually change instances of widgets.
     return Scaffold(
       backgroundColor: Colors.white24,
+      appBar: AppBar(
+        title: Text('HOME PAGE'),
+      ),
+      drawer: MainDrawer(),
 
       body: Center(
         // Center is a layout widget. It takes a single child and positions it
@@ -65,7 +70,7 @@ class _MyHomePageState extends State<MyHomePage> {
           // Invoke "debug painting" (press "p" in the console, choose the
           // "Toggle Debug Paint" action from the Flutter Inspector in Android
           // Studio, or the "Toggle Debug Paint" command in Visual Studio Code)
-           // to see the wireframe for each widget.
+          // to see the wireframe for each widget.
           //
           // Column has various properties to control how it sizes itself and
           // how it positions its children. Here we use mainAxisAlignment to
@@ -74,7 +79,7 @@ class _MyHomePageState extends State<MyHomePage> {
           // horizontal).
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Text ("SELECT LEVEL", style: TextStyle(fontSize: 40, color: Colors.red),),
+            Text ("SELECT LEVEL", style: TextStyle(fontSize: 40, color: Colors.white),),
             SizedBox(
               height: 70,
             ),
@@ -84,7 +89,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 Container(
                   height: 50, width: 150,
                   decoration: BoxDecoration(
-                    color: Colors.red,
+                    color: Colors.white,
                     borderRadius: BorderRadius.circular(30),
                   ),
                   margin: EdgeInsets.only(right: 35),
@@ -97,9 +102,9 @@ class _MyHomePageState extends State<MyHomePage> {
                   ),
                 ),
                 Container(
-                  height: 60, width: 160,
+                  height: 50, width: 150,
                   decoration: BoxDecoration(
-                    color: Colors.green,
+                    color: Colors.white,
                     borderRadius: BorderRadius.circular(30),
                   ),
                   margin: EdgeInsets.only(left: 20),
