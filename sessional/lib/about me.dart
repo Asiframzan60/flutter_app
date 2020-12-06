@@ -1,7 +1,7 @@
-import 'main_page.dart';
+import 'main.dart';
 import 'package:flutter/material.dart';
 import 'dart:io';
-import 'main_page.dart';
+import 'main.dart';
 class about extends StatefulWidget {
   @override
   _aboutState createState() => _aboutState();
@@ -30,7 +30,7 @@ class _aboutState extends State<about> {
               ListTile(
                 title: Text('Home Screen', style: TextStyle(fontWeight: FontWeight.bold , fontSize: 20),),
                 onTap: () {
-                  Navigator.pop(context, MaterialPageRoute(builder: (context) => main_page()));
+                  Navigator.pop(context, MaterialPageRoute(builder: (context) => MyApp()));
                 },
               ),
               ListTile(
@@ -67,10 +67,10 @@ class _aboutState extends State<about> {
         floatingActionButton:FloatingActionButton(
           onPressed: (){
             setState(() {
-              Navigator.push(context, MaterialPageRoute(builder: (context)=>main_page()));
+              Navigator.push(context, MaterialPageRoute(builder: (context)=>MyApp()));
             });
           },
-          child: Icon(Icons.keyboard_return_rounded),
+          child: Icon(Icons.account_balance),
           backgroundColor: Colors.black,
         ) );
   }
